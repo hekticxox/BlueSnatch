@@ -12,7 +12,9 @@
     <application
         android:label="BlueScan"
         android:icon="@mipmap/ic_launcher">
-        <receiver android:name=".ScanReceiver">
+        <receiver
+            android:name=".ScanReceiver"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.example.bluescan.SCAN"/>
             </intent-filter>
